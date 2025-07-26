@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard | IndiaTourGenie</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body class="dashboard-bg">
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="logo"><span>India</span>TourGenie</div>
+    <nav>
+      <ul class="nav-menu">
+        <li><a class="list-items" href="index.html">Home</a></li>
+        <li><a class="list-items" href="planner.html">Plan Trip</a></li>
+        <li><a class="list-items" href="dashboard.html">Dashboard</a></li>
+        <li><a class="list-items" href="login.html">Login</a></li>
+        <li><a class="list-items" href="signup.html">Sign Up</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Dashboard Section -->
+  <section class="dashboard glass-card">
+    <div class="dashboard-header">
+      <h2>📂 Your Saved Trips</h2>
+      <p>View and manage your AI-planned itineraries</p>
+    </div>
+    <div class="trip-grid" id="dashboardTrips">
+      <!-- Cards will be injected here -->
+    </div>
+  </section>
+
+  <!-- Modal for Itinerary View -->
+  <div id="modalOverlay" class="modal-overlay" style="display:none;">
+    <div class="modal-content">
+      <span class="close-button" onclick="closeModal()">×</span>
+      <h2>🧭 Full Itinerary</h2>
+      <div class="itinerary-text" id="modalItineraryText"></div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 IndiaTourGenie. Made with ❤️ in India.</p>
+  </footer>
+
+  <script src="js/dashboard.js"></script>
+</body>
+</html>

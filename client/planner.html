@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trip Planner | IndiaTourGenie</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <style>
+    /* Spinner Styles */
+    .loader-container {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .spinner {
+      border: 6px solid #f3f3f3;
+      border-top: 6px solid #3498db;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      animation: spin 1s linear infinite;
+      margin-bottom: 10px;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body class="planner-bg">
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="logo"><span>India</span>TourGenie</div>
+    <nav>
+      <ul class="nav-menu">
+        <li><a class="list-items" href="index.html">Home</a></li>
+        <li><a class="list-items" href="planner.html">Plan Trip</a></li>
+        <li><a class="list-items" href="dashboard.html">Dashboard</a></li>
+        <li><a class="list-items" href="login.html">Login</a></li>
+        <li><a class="list-items" href="signup.html">Sign Up</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Trip Planner Form -->
+  <section class="trip-planner glass-card">
+    <h2>🗺️ Plan Your Indian Adventure</h2>
+    <form id="plannerForm">
+      <input type="text" id="destination" placeholder="Destination" required />
+      <input type="number" id="days" placeholder="Number of Days" required />
+      <input type="text" id="interests" placeholder="Interests (e.g. culture, adventure)" required />
+      <button type="submit" class="btn">Generate Itinerary</button>
+    </form>
+
+    <!-- Loader Spinner -->
+    <div id="loader" class="loader-container">
+      <div class="spinner"></div>
+      <p>Generating itinerary... Please wait ✨</p>
+    </div>
+
+    <!-- Output -->
+    <div id="generatedItinerary" class="itinerary-output"></div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 IndiaTourGenie. Made with ❤️ in India.</p>
+  </footer>
+
+  <script src="js/planner.js"></script>
+</body>
+</html>

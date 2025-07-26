@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login | IndiaTourGenie</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body class="auth-body auth-background-image">
+  <div class="auth-container">
+    <h2>Welcome Back 👋</h2>
+    <form class="auth-form" id="loginForm">
+      <input type="email" id="email" placeholder="Email" required />
+      <div class="password-field">
+        <input type="password" id="password" placeholder="Password" required />
+        <span class="toggle-password" onclick="togglePassword()">👁️</span>
+      </div>
+      <button type="submit" class="btn">Login</button>
+    </form>
+
+    <div class="google-signin">
+      <img src="https://img.icons8.com/color/48/000000/google-logo.png" alt="Google" width="20" />
+      <span>Sign in with Google</span>
+    </div>
+
+    <p style="margin-top: 1rem;">Don't have an account? <a href="signup.html">Sign Up</a></p>
+  </div>
+
+  <script src="js/auth.js"></script>
+  <script>
+    function togglePassword() {
+      const password = document.getElementById("password");
+      password.type = password.type === "password" ? "text" : "password";
+    }
+  </script>
+</body>
+</html>

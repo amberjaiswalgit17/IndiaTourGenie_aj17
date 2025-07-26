@@ -1,0 +1,7 @@
+server/.env
+# Ignore environment variable files
+# Ignore node_modules in server
+server/node_modules/
+
+# Ignore VS Code settings folder
+.vscode/

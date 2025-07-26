@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Itinerary | IndiaTourGenie</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="logo"><span>India</span>TourGenie</div>
+    <nav>
+      <ul class="nav-menu">
+        <li><a class="list-items" href="index.html">Home</a></li>
+        <li><a class="list-items" href="planner.html">Plan Trip</a></li>
+        <li><a class="list-items" href="dashboard.html">Dashboard</a></li>
+        <li><a class="list-items" href="login.html">Login</a></li>
+        <li><a class="list-items" href="signup.html">Sign Up</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Itinerary Output -->
+  <section class="itinerary-section">
+    <h2>📑 Your Itinerary</h2>
+    <form id="itineraryForm">
+      <input type="text" id="referenceCode" placeholder="Enter Reference Code" required />
+      <button type="submit" class="btn">Get Itinerary</button>
+    </form>
+
+    <div id="itineraryDetails" class="itinerary-output">
+      <!-- Dynamic itinerary will appear here -->
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 IndiaTourGenie. Made with ❤️ in India.</p>
+  </footer>
+
+  <script src="js/itinerary.js"></script>
+</body>
+</html>
