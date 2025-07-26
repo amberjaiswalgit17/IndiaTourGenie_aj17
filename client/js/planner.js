@@ -19,7 +19,8 @@ document.addEventListener("DOMContentLoaded", () => {
     output.innerHTML = "";
 
     try {
-      const response = await fetch("http://localhost:5000/api/ai/generate", {
+      // const response = await fetch("http://localhost:5000/api/ai/generate", {
+      const response = await fetch("https://indiatour-genie-backend.onrender.com", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
