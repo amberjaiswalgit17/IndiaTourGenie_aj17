@@ -1,7 +1,6 @@
-# 🇮🇳 IndiaTourGenie
+# IndiaTourGenie
 
 A smart, AI-powered trip planner to explore India effortlessly!
-
 ---
 
 ## 🚀 Overview
