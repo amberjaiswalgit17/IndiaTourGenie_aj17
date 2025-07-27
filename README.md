@@ -1,6 +1,7 @@
 # IndiaTourGenie
 
 A smart, AI-powered trip planner to explore India effortlessly!
+
 ---
 
 ## 🚀 Overview
@@ -37,7 +38,7 @@ A smart, AI-powered trip planner to explore India effortlessly!
 ### Requirements
 
 - Node.js installed
-- A [Cohere API key](https://cohere.ai/)
+- A [Cohere API key](https://cohere.ai/) is  Used
 
 ### 1. Clone the Repo <br>
 git clone https://github.com/amberjaiswalgit17/IndiaTourGenie_aj17 <br>
